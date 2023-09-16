@@ -57,8 +57,17 @@ namespace MegaSena
                 }
 
                 numeros[c] = aleatorio;
-                Console.Write(numeros[c] + " ");
             }
+
+            // Ordenar o array em ordem crescente
+            Array.Sort(numeros);
+
+            // Exibir os números ordenados
+            foreach (var numero in numeros)
+            {
+                Console.Write(numero + " ");
+            }
+
             Console.WriteLine();
             Console.WriteLine("---------------------");
             Console.WriteLine("Pressione Enter para voltar ao Menu!");
